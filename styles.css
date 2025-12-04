@@ -1,3 +1,5 @@
+/* Sean Tiner 2025 */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* Splash Image */
+/* Splash Image ------------------------------------*/
 .splashImage {
     position: relative;
     text-align: center;
@@ -123,6 +125,8 @@ body {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
+/* Mobile Nav Menu -----------------------------------------*/
 .mobileNavContainer {
     height: 100%;
     width: 0;
@@ -163,6 +167,7 @@ body {
 }
 
 
+/* Narrow Section + Cards ---------------------------------------*/
 .narrowSection {
     width: 70%;
     margin: 6rem auto;
@@ -257,7 +262,7 @@ body {
     }
 }
 
-
+/* Parallax Image ---------------------------------------*/
 .parallaxImage {
     position: relative;
     background-image: url("img/Tuscany\ Italy\ Landscape\ with\ poppies.jpg");
@@ -276,7 +281,7 @@ body {
 }
 
 
-
+/* Large Cards ---------------------------------------*/
 .largeCardContainer {
     width: 100%;
     display: flex;
@@ -345,6 +350,7 @@ body {
 }
 
 
+/* Full Width Banner ---------------------------------------*/
 .fullWidth {
     width: 100%;
 }
@@ -440,7 +446,8 @@ body {
     }
 }
 
-/* Single Underline text effect */
+
+/* Single Underline text effect -------------------------------------*/
 .singleUnderline {
     position: relative;
     display: inline-block;
@@ -452,7 +459,6 @@ body {
     position: absolute;
     width: 100%;
     height: 1.5px;
-    /* Old color: background: linear-gradient(to right, #ff0000, #00ffff); */
     background-color: white;
     bottom: -5px;
     left: 0;
@@ -467,8 +473,7 @@ body {
 }
 
 
-
-/* Animations */
+/* Animations -------------------------------------*/
 .animateTransition {
     transition: opacity 1s, translate 1s;
 }
@@ -484,4 +489,5 @@ body {
 .animate {
 	opacity: 1;
     translate: 0 0;
+
 }
