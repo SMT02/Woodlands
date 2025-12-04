@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+body {
+    background-color: rgba(23, 34, 25, 1);
+    font-size: 1.5rem;
+}
+
+/* Splash Image */
+.splashImage {
+    position: relative;
+    text-align: center;
+}
+
+.splashImage img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    display: block;
+}
+
+.splashImageText {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+    color: white;
+    font-size: 7rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .splashImageText {
+        font-size: 4.5rem;
+    }
+}
+
+/* Navbar -------------------------------------------------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(23, 34, 25, 1);
+    border-bottom: 2px solid rgba(53, 77, 58, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navMenu {
+    list-style-type: none;
+    display: flex;
+}
+
+.navMenu.mobile {
+    display: none;
+}
+
+.navMenuItem {
+    padding: 2rem;
+}
+
+.navMenuItem a {
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.navLogo {
+    padding: 16px;
+}
+
+.navLogo img {
+    cursor: pointer;
+    width: 75px;
+}
+
+.hamburgerButton {
+    position: absolute;
+    left: 2rem;
+    display: none;
+    width: 40px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.hamburgerLine {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 0.2s;
+    transform-origin: center;
+}
+
+.hamburgerButton:hover .hamburgerLine {
+    opacity: 0.7;
+}
+
+.hamburgerButton.active .hamburgerLine:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburgerButton.active .hamburgerLine:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobileNavContainer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 34, 25, 0.5);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.mobileNavContainer.show {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .navMenu {
+        display: none;
+    }
+
+    .navMenu.mobile {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .hamburgerButton {
+        display: flex;
+    }
+}
+
+
+.narrowSection {
+    width: 70%;
+    margin: 6rem auto;
+}
+
+.textContainer h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.button {
+    color: black;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.wideSection {
+    width: 90%;
+    margin: auto;
+}
+
+.wideSectionContent {
+    width: 100%;
+    background-color: rgba(53, 77, 58, 1);
+    border-radius: 50px;
+    display: flex;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sectionContentText {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 3rem;
+}
+
+.sectionContentText h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sectionContentImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.sectionContentImage img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .wideSectionContent {
+        flex-direction: column;
+    }
+
+    .sectionContentText {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sectionContentImage {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wideSectionContent {
+        border-radius: 20px;
+    }
+
+    .sectionContentText {
+        margin: 0;
+    }
+
+    .sectionContentImage img {
+        border-radius: 20px;
+    }
+}
+
+
+.parallaxImage {
+    position: relative;
+    background-image: url("img/Tuscany\ Italy\ Landscape\ with\ poppies.jpg");
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 550px) {
+    .parallaxImage {
+        background-attachment: scroll;
+    }
+}
+
+
+
+.largeCardContainer {
+    width: 100%;
+    display: flex;
+}
+
+.largeCard {
+    background-color: rgba(53, 77, 58, 1);
+    width: 50%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    transition: all 0.4s;
+}
+
+.largeCard:hover {
+    transform: translateY(-1rem);
+}
+
+.largeCard img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.largeCardContent {
+    margin: 4rem;
+}
+
+.largeCardContent * {
+    margin-bottom: 3rem;
+}
+
+.cardTextContainer button {
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .largeCardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .largeCard {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .largeCard {
+        border-radius: 20px;
+    }
+
+    .largeCard img {
+        border-radius: 20px;
+    }
+
+    .largeCardContent {
+        margin: 2rem;
+    }
+
+    .narrowSection {
+        width: 80%;
+    }
+}
+
+
+.fullWidth {
+    width: 100%;
+}
+
+.banner {
+    background-color: rgba(53, 77, 58, 1);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.bannerContent {
+    width: 50%;
+    margin: auto;
+    padding: 4rem;
+}
+
+.bannerContent h1 {
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .bannerContent {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner {
+        border-radius: 0;
+    }
+
+    .bannerContent {
+        padding: 1rem;
+    }
+}
+
+/* Footer -----------------------------------------*/
+.narrowSection hr {
+    border: 1px solid rgba(53, 77, 58, 1);
+}
+
+.flexFooter {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.flexFooterContent {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.flexFooterColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imgHeader {
+    display: flex;
+    align-items: center;
+}
+
+.imgHeader img {
+    width: 80px;
+    margin: 0 1rem 3rem 0;
+}
+
+.flexFooterColumn > div, p, h1 {
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    .flexFooter {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .flexFooter {
+        font-size: 1.5rem;
+    }
+
+    .flexFooterContent {
+        flex-direction: column;
+    }
+
+    .imgHeader {
+        flex-direction: column;
+    }
+}
+
+/* Single Underline text effect */
+.singleUnderline {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.singleUnderline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    /* Old color: background: linear-gradient(to right, #ff0000, #00ffff); */
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+
+.singleUnderline:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+/* Animations */
+.animateTransition {
+    transition: opacity 1s, translate 1s;
+}
+
+.animateOnScrollFade {
+    opacity: 0;
+}
+
+.animateFromTop {
+    translate: 0 -50px;
+}
+
+.animate {
+	opacity: 1;
+    translate: 0 0;
+}
