@@ -1,3 +1,6 @@
+// Sean Tiner 2025
+
+// Hamburger Animation + Mobil Nav Activation
 const hamburger = document.getElementById("hamburgerButton");
 const mobileNav = document.getElementById("mobileNavContainer");
 
@@ -7,6 +10,7 @@ hamburger.addEventListener("click", () => {
 });
 
 
+// Scroll Animation for Navbar Background
 const navbar = document.getElementById("navbar");
 const navLogo = document.getElementById("logo");
 
@@ -39,5 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   animationElements.forEach(el => {
     observer.observe(el);
   });
+
 
 });
