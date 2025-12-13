@@ -167,7 +167,7 @@ body {
 }
 
 
-/* Narrow Section + Cards ---------------------------------------*/
+/* Narrow Section + Content ---------------------------------------*/
 .narrowSection {
     width: 70%;
     margin: 6rem auto;
@@ -193,7 +193,7 @@ body {
     background-color: black;
 }
 
-
+/* Wide Section + Cards ---------------------------------------*/
 .wideSection {
     width: 90%;
     margin: auto;
@@ -491,3 +491,4 @@ body {
     translate: 0 0;
 
 }
+
