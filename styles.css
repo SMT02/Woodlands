@@ -417,12 +417,18 @@ body {
     align-items: center;
 }
 
+.imgHeader h1 {
+    margin-bottom: 3rem;
+}
+
 .imgHeader img {
     width: 80px;
     margin: 0 1rem 3rem 0;
 }
 
-.flexFooterColumn > div, p, h1 {
+.flexFooterColumn > div,
+.flexFooterColumn > p,
+.flexFooterColumn > h1 {
     margin-bottom: 3rem;
 }
 
@@ -491,4 +497,5 @@ body {
     translate: 0 0;
 
 }
+
 
