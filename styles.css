@@ -240,7 +240,7 @@ body {
 
     .sectionContentText {
         width: 100%;
-        margin: 0;
+        margin: 3rem 0;
     }
 
     .sectionContentImage {
@@ -497,5 +497,6 @@ body {
     translate: 0 0;
 
 }
+
 
 
