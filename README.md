@@ -4,8 +4,7 @@ Simple website design with a woodland/outdoor theme
 
 ## Screenshots
 <img width="2560" height="1440" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/2e23fb27-a46b-4c98-9b8f-41db2bd04200" />
-
-
+<br/>
 <img width="2560" height="1440" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/88547b49-20e3-494e-8d0d-6eea541faf16" />
 
 
