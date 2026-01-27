@@ -251,10 +251,11 @@ body {
 @media only screen and (max-width: 400px) {
     .wideSectionContent {
         border-radius: 20px;
+		padding: 2rem;
     }
 
     .sectionContentText {
-        margin: 0;
+        margin: 1rem 0;
     }
 
     .sectionContentImage img {
@@ -497,6 +498,7 @@ body {
     translate: 0 0;
 
 }
+
 
 
 
