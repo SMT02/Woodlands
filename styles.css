@@ -140,10 +140,6 @@ body {
     transition: 0.5s;
 }
 
-.mobileNavContainer.show {
-    width: 100%;
-}
-
 @media only screen and (max-width: 800px) {
     .navMenu {
         display: none;
@@ -160,6 +156,10 @@ body {
         align-items: center;
         white-space: nowrap;
     }
+
+	.mobileNavContainer.show {
+	    width: 100%;
+	}
 
     .hamburgerButton {
         display: flex;
@@ -498,6 +498,7 @@ body {
     translate: 0 0;
 
 }
+
 
 
 
