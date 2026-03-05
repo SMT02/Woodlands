@@ -451,6 +451,10 @@ body {
     .imgHeader {
         flex-direction: column;
     }
+
+	.imgHeader img {
+        margin: 0 0 3rem 0;
+    }
 }
 
 
@@ -498,6 +502,7 @@ body {
     translate: 0 0;
 
 }
+
 
 
 
